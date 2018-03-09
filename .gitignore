@@ -12,3 +12,5 @@ dist
 
 # Nuxt pwa
 sw.*
+
+.env
