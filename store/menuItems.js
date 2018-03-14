@@ -62,6 +62,6 @@ export const state = () =>  ({
       },
       { icon: 'bubble_chart',  title: 'Inspire', to: '/inspire', visible:true }
     ],
-    miniVariant: false,
+    miniVariant: true,
     accountOpen: false
 })

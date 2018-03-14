@@ -1,6 +1,5 @@
 <template>
   <v-layout justify-center align-center>
-
     <v-flex xs12 sm8 md6>
       <v-card>
         <v-form v-model="valid" ref="form" @submit.prevent="signup()" lazy-validation>

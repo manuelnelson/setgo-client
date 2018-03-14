@@ -1,6 +1,6 @@
 <template>
   <div v-if="alerts">
-     <v-alert v-for="(alert,ndx) in alerts" @click="clearAlert(alert)" class="mb-3" :dismissible="true" outline v-bind:key="ndx"  :color="alert.type" :value="true">
+     <v-alert v-for="(alert,ndx) in alerts" @click="clearAlert(alert)" class="mb-3" :dismissible="true" v-bind:key="ndx"  :color="alert.type" :value="true">
        {{alert.message}}
     </v-alert>
   </div>

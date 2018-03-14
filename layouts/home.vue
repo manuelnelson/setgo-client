@@ -1,29 +1,10 @@
 <template>
   <v-app>
-    <v-navigation-drawer
-      :mini-variant="miniVariant"
-      :clipped="clipped"
-      v-model="drawer"
-      fixed
-      app
-    >
-      <navigation></navigation>
-    </v-navigation-drawer>
-    <v-toolbar fixed app :clipped-left="clipped" class="primary white--text">
-      <v-toolbar-side-icon class="white--text" @click="drawer = !drawer"></v-toolbar-side-icon>
-      <v-btn class="white--text" icon @click.stop="toggleMinivariant()">
-        <v-icon v-html="miniVariant ? 'chevron_right' : 'chevron_left'"></v-icon>
-      </v-btn>
-      <v-toolbar-title v-text="title"></v-toolbar-title>
-      <v-spacer></v-spacer>
-    </v-toolbar>
-    <v-content>
-      <v-container fluid>
-        <alerts></alerts>
-        <nuxt />
-      </v-container>
+    <v-content >
+      <alerts></alerts>
+      <nuxt />
     </v-content>
-    <v-footer :fixed="fixed" app>
+    <v-footer :fixed="fixed" class="footer" app>
       <span>&copy; 2018</span>
     </v-footer>
   </v-app>
@@ -35,11 +16,14 @@ import Navigation from '~/components/Navigation.vue'
 import {mapGetters, mapMutations} from 'vuex'
   
   export default {
+    created(){
+      this.containerType = this.$route.name === 'index' ? 'fluid' : 'grid-list-lg'
+    },
     head(){
       return {
         title: 'Just Go | Home',
         meta: [
-          { hid: 'description', name: 'description', content: 'Your personal productivity assistant' }
+          { hid: 'description', name: 'description', content: 'Efficient productivity app' }
         ]
       }
     },
@@ -55,7 +39,8 @@ import {mapGetters, mapMutations} from 'vuex'
         fixed: false,
         right: true,
         rightDrawer: false,
-        title: 'Just Go'
+        title: 'Just Go',
+        containerType: 'grid-list-lg'
       }
     },
     methods: {
@@ -77,3 +62,13 @@ import {mapGetters, mapMutations} from 'vuex'
     }
   }
 </script>
+
+<style lang="stylus" scoped>
+  @import '~assets/variables'
+    $height = 80vh
+
+  .footer
+    background-color: rgba(0,0,0,0.4)
+    color: $primary
+
+</style>

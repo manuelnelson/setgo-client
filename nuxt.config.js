@@ -4,8 +4,11 @@ const nodeExternals = require('webpack-node-externals')
 const env = require('dotenv').config();
 
 module.exports = {
-  mode: 'universal',
+  mode: 'universal', 
 
+  workbox: {
+    dev: false
+  },
   /*
   ** Headers of the page
   */
@@ -31,7 +34,8 @@ module.exports = {
   ** Global CSS
   */
   css: [
-    'vuetify/src/stylus/main.styl'
+    '~assets/main.styl'
+    //'vuetify/src/stylus/main.styl'
   ],
 
   /*
@@ -62,8 +66,11 @@ module.exports = {
       user: { url: '/auth/user', method: 'get', propertyName: 'user' }
     },
     redirect: {
-      login: '/login',
+      login: '/',
       home: '/'
+    },
+    token: {
+      name: 'setgoToken'
     }
   },
 
