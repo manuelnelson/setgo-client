@@ -1,8 +1,8 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js run dev
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js run start
 
 PATH: 
-  C:\Mine\Programs\cmder\bin;C:\Mine\Programs\cmder\vendor\conemu-maximus5\ConEmu\Scripts;C:\Mine\Programs\cmder\vendor\conemu-maximus5;C:\Mine\Programs\cmder\vendor\conemu-maximus5\ConEmu;C:\Program Files\Docker\Docker\Resources\bin;C:\Python27\;C:\Python27\Scripts;C:\Python36\Scripts\;C:\Python36\;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\elnel\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\dotnet\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin\;C:\Users\elnel\AppData\Local\atom\bin;C:\Users\elnel\AppData\Local\Microsoft\WindowsApps;C:\Users\elnel\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\Heroku\bin;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Docker Toolbox;C:\Users\elnel\AppData\Roaming\npm;C:\Users\elnel\AppData\Local\Programs\Fiddler;C:\PostgreSQL\bin;C:\Users\elnel\AppData\Local\Yarn\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\share\vim\vim74;C:\Mine\Programs\cmder\
+  C:\Mine\Programs\cmder\bin;C:\Mine\Programs\cmder\vendor\conemu-maximus5\ConEmu\Scripts;C:\Mine\Programs\cmder\vendor\conemu-maximus5;C:\Mine\Programs\cmder\vendor\conemu-maximus5\ConEmu;C:\Program Files\Docker\Docker\Resources\bin;C:\Python27\;C:\Python27\Scripts;C:\Python36\Scripts\;C:\Python36\;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\elnel\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\dotnet\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin\;C:\PostgreSQL\pg10\bin;C:\Users\elnel\AppData\Local\atom\bin;C:\Users\elnel\AppData\Local\Microsoft\WindowsApps;C:\Users\elnel\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\Heroku\bin;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Docker Toolbox;C:\Users\elnel\AppData\Roaming\npm;C:\Users\elnel\AppData\Local\Programs\Fiddler;C:\PostgreSQL\bin;C:\Users\elnel\AppData\Local\Yarn\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\share\vim\vim74;C:\Mine\Programs\cmder\
 
 Yarn version: 
   1.5.1
@@ -37,8 +37,11 @@ npm manifest:
       "dotenv": "^5.0.0",
       "fs": "^0.0.1-security",
       "nuxt": "^1.0.0",
+      "postcss-loader": "2.1.1",
       "vue": "^2.5.15",
       "vue-picture-input": "^2.1.1",
+      "vue-server-renderer": "^2.5.15",
+      "vue-template-compiler": "^2.5.15",
       "vuetify": "^1.0.1"
     },
     "devDependencies": {
@@ -4969,7 +4972,7 @@ Lockfile:
       cosmiconfig "^2.1.1"
       object-assign "^4.1.0"
   
-  postcss-loader@^2.1.0:
+  postcss-loader@2.1.1, postcss-loader@^2.1.0:
     version "2.1.1"
     resolved "https://registry.yarnpkg.com/postcss-loader/-/postcss-loader-2.1.1.tgz#208935af3b1d65e1abb1a870a912dd12e7b36895"
     dependencies:
@@ -6688,6 +6691,19 @@ Lockfile:
       serialize-javascript "^1.3.0"
       source-map "0.5.6"
   
+  vue-server-renderer@^2.5.15:
+    version "2.5.15"
+    resolved "https://registry.yarnpkg.com/vue-server-renderer/-/vue-server-renderer-2.5.15.tgz#36284a74c4562f7206a982f90888a3cc7a46ae02"
+    dependencies:
+      chalk "^1.1.3"
+      hash-sum "^1.0.2"
+      he "^1.1.0"
+      lodash.template "^4.4.0"
+      lodash.uniq "^4.5.0"
+      resolve "^1.2.0"
+      serialize-javascript "^1.3.0"
+      source-map "0.5.6"
+  
   vue-style-loader@^3.0.0:
     version "3.1.2"
     resolved "https://registry.yarnpkg.com/vue-style-loader/-/vue-style-loader-3.1.2.tgz#6b66ad34998fc9520c2f1e4d5fa4091641c1597a"
@@ -6698,6 +6714,13 @@ Lockfile:
   vue-template-compiler@^2.5.13:
     version "2.5.13"
     resolved "https://registry.yarnpkg.com/vue-template-compiler/-/vue-template-compiler-2.5.13.tgz#12a2aa0ecd6158ac5e5f14d294b0993f399c3d38"
+    dependencies:
+      de-indent "^1.0.2"
+      he "^1.1.0"
+  
+  vue-template-compiler@^2.5.15:
+    version "2.5.15"
+    resolved "https://registry.yarnpkg.com/vue-template-compiler/-/vue-template-compiler-2.5.15.tgz#cc004097e37167be8b85ea22ab2840d8e8cca1c0"
     dependencies:
       de-indent "^1.0.2"
       he "^1.1.0"
@@ -6997,7 +7020,7 @@ Trace:
   Error: Command failed.
   Exit code: 1
   Command: C:\WINDOWS\system32\cmd.exe
-  Arguments: /d /s /c nuxt
+  Arguments: /d /s /c nuxt start
   Directory: C:\Mine\Projects\setgo\client
   Output:
   

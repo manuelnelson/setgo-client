@@ -49,7 +49,7 @@
 <script>
 import {GetIcon} from '~/services/category-helper'
 import {mapMutations,mapGetters,mapActions} from 'vuex';
-
+import {GetParent} from '~/services/go-helper'
 export default {
   props: ['gos','message'],
   data(){
@@ -85,9 +85,12 @@ export default {
       if(item.active) {
         this.children = item.parent ? this.children : item.children
         this.activeItem = item;
-        this.$emit('showEdit',item)
+        //console.log(this.gos)
+        this.parentItem = GetParent({gos:this.gos},item);
+        this.$emit('showEdit',item, this.parentItem)
       } else {
         this.activeItem = null;
+        this.parentItem = null;
         this.children = []
         this.clearListActive();
         this.$emit('showCreate')

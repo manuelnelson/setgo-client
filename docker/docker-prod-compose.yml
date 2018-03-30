@@ -1,0 +1,23 @@
+version: '3.1'
+services:
+  server:
+    build:
+      context: ../../server/
+      dockerfile: Dockerfile
+    environment: 
+      - .env
+    ports:
+      - 3334:3334   
+    networks: 
+      - backend
+  client:
+    build:
+      context: ../
+      dockerfile: Dockerfile
+    environment:
+      - .env
+    ports:
+      - 80:3002   
+networks:
+  backend:
+    driver: bridge

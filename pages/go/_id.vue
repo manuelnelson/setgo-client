@@ -8,7 +8,7 @@
     </v-flex>
     <v-flex xs12 lg4 offset-lg2>
       <go-form v-if="showCreate" title="Create"></go-form>
-      <go-form v-if="showEdit && activeItem" @showAdd="showAddForm" :existing-go="activeItem" title="Edit"></go-form>
+      <go-form v-if="showEdit && activeItem" @showAdd="showAddForm" :parent-go="parentItem" :existing-go="activeItem" title="Edit"></go-form>
       <go-form v-if="showAdd && activeItem" :parent-go="activeItem" title="Add"></go-form>
       <!-- <edit-go v-if="showAdd && activeItem" @showAdd="showAddForm" :active-item="activeItem"></edit-go>
       <create-child-go v-if="showAdd && activeItem" :item="activeItem" title="Add"></create-child-go> -->
@@ -34,7 +34,8 @@ export default {
       showEdit: false,
       showCreate: true,
       showAdd: false,
-      activeItem: null
+      activeItem: null,
+      parentItem: null
     }
   },
   computed: {
@@ -47,9 +48,11 @@ export default {
     goList
   },
   methods: {
-    showEditForm(item){
+    showEditForm(item, parentItem){
       console.log(item)
+      console.log('parentItem', parentItem)
       this.activeItem = item;
+      this.parentItem = parentItem
       this.showEdit = true
       this.showCreate = false
       this.showAdd = false

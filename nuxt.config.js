@@ -83,7 +83,7 @@ module.exports = {
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
     //proxy: true,
-    baseURL: 'localhost:3333'
+    baseURL: 'localhost:3334'
   },
     /*
   ** Build configuration
