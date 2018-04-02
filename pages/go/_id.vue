@@ -31,7 +31,7 @@ export default {
   data() {
     return {
       message: "Nothing to do today! Add some go's",
-      showEdit: false,
+      showEdit: true,
       showCreate: true,
       showAdd: false,
       activeItem: null,

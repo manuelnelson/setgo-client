@@ -5,6 +5,7 @@
   "author": "Emmanuel Nelson",
   "private": true,
   "scripts": {
+    "docker-dev": "docker-compose -f .\\docker\\docker-compose.yml -f .\\docker\\docker-dev-compose.yml up",
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",

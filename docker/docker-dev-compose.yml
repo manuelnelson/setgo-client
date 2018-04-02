@@ -1,19 +1,38 @@
 version: '3.1'
 services:
-  db:
-    image: postgres
-    restart: always 
-    image: postgres:10.3
-    ports: 
-      - 5436:5432
-    environment:
-      POSTGRES_USER: justgo-admin
-      POSTGRES_PASSWORD: kidyhpkidyhp
-      POSTGRES_DB: justgo
+  # db:
+  #   image: postgres
+  #   restart: always 
+  #   image: postgres:10.3
+  #   ports: 
+  #     - 5436:5432
+  #   environment:
+  #     POSTGRES_USER: justgo-admin
+  #     POSTGRES_PASSWORD: kidyhpkidyhp
+  #     POSTGRES_DB: justgo
 
   server:
+    build:
+      context: ../../server/
+      dockerfile: ./docker/Dockerfile
     ports:
       - 3333:3333   
+    volumes:
+      - ../../server/app:/usr/src/server/app
+      - ../../server/config:/usr/src/server/config
+      - ../../server/database:/usr/src/server/database
+      - ../../server/start:/usr/src/server/start
   client:
+    build:
+      context: ../
+      dockerfile: ./docker/Dockerfile
+    volumes:
+      - ../pages:/usr/src/app/pages
+      - ../layouts:/usr/src/app/layouts
+      - ../middleware:/usr/src/app/middleware
+      - ../plugins:/usr/src/app/plugins
+      - ../services:/usr/src/app/services
+      - ../static:/usr/src/app/static
+      - ../store:/usr/src/app/store
     ports:
-      - 3002:3002   
+      - 3005:3005   

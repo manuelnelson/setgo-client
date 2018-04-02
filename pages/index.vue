@@ -26,7 +26,7 @@
                       hint="At least 8 characters"
                       v-model="password"
                       :rules="[rules.minLength]"
-                      min="8"
+                      min="8" 
                       :append-icon="e1 ? 'visibility' : 'visibility_off'"
                       :append-icon-cb="() => (e1 = !e1)"
                       :type="e1 ? 'password' : 'text'"
@@ -39,14 +39,14 @@
               <v-btn type="submit" color="primary" flat>Submit</v-btn>
             </v-card-actions>
           </v-form>
-        </v-card>
+        </v-card> 
         </v-flex>
       </v-layout>
     </section>
     <v-container grid-list-lg>
       <v-layout>
         <v-flex xs12 lg4>
-          <h2>test</h2>
+          <h2>not</h2>
         </v-flex>
       </v-layout>
     </v-container>

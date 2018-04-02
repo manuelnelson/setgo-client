@@ -2,7 +2,7 @@ export default function ({ $axios, redirect, app }) {
     $axios.onError(error => {
         const code = parseInt(error.response && error.response.status)
         //TODO add all necessary error code responses here
-        console.log(code)
+        //console.log(code)
         switch(code){
             case 400:
                 if(Array.isArray(error.response.data.messages))
